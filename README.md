@@ -2,8 +2,11 @@
 
 # 環境設定
 安裝以下軟體:
+
 1. [NodeJS](http://nodejs.org/download/)
+
 2. [Git](http://git-scm.com/download/win)
+
 3. [Sublime Text](http://www.sublimetext.com/)
 
 # 執行
@@ -83,4 +86,4 @@ client side
 - [CSS](http://www.w3schools.com/css/default.asp)
 
 文件(optional)
-- [Markdown](http://markdown.tw/)
+- [Markdown](https://help.github.com/articles/markdown-basics/)
