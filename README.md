@@ -13,22 +13,22 @@
 使用 Git 附帶的 Cmd 執行以下 Command
 
 1. 下載 source code
-```
-git clone https://github.com/play-lol/nobunaga.git
-```
+    ```
+    git clone https://github.com/play-lol/nobunaga.git
+    ```
 2. 進入資料夾 nobunaga
-```
-cd nobunaga
-```
+    ```
+    cd nobunaga
+    ```
 3. 安裝需要的 libraray dependencies, 定義在 package.json
-```
-npm install
-```
+    ```
+    npm install
+    ```
 4. 執行 server
-```
-DEBUG=nobunaga:* ./bin/www
-```
-open browser http://localhost:3000
+    ```
+    DEBUG=nobunaga:* ./bin/www
+    ```
+    open browser http://localhost:3000
 
 # devdocs
 http://devdocs.io/
