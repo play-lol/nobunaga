@@ -11,6 +11,7 @@
 
 # 執行
 使用 Git 附帶的 Cmd 執行以下 Command
+
 1. 下載 source code
 ```
 git clone https://github.com/play-lol/nobunaga.git
@@ -47,6 +48,7 @@ enable 以下文件，並在右上**Offline**選擇 Install All,方便查詢
 只需要基本 clone, add, commit, push, pull, merge 以及處理 conflict
 - [連猴子都能懂的入門指南](http://backlogtool.com/git-guide/tw/intro/intro2_4.html)
 - [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_tw/ch02.html)
+- [Git CodeSchool](https://try.github.io)
 
 第一次抓 code
 ```
@@ -75,6 +77,7 @@ git push origin master
 
 # 需要瞭解
 優先看 [Javascript](http://www.w3schools.com/js/default.asp), client server 都需要
+- [Javascript CodeSchool](http://javascript-roadtrip.codeschool.com)
 
 server side
 - [NodeJS](http://nodejs.org/)
@@ -82,6 +85,7 @@ server side
 
 client side
 - [jQuery](http://learn.jquery.com/)
+  - [jQuery CodeSchool](https://www.codeschool.com/courses/try-jquery)
 - [HTML](http://www.w3schools.com/html/default.asp)
 - [CSS](http://www.w3schools.com/css/default.asp)
 
