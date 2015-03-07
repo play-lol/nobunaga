@@ -106,7 +106,26 @@ client side
 ## fork & clone
 先 fork play-lol/nobunaga, 並且 clone 自己的 repo
 ```
-git clone https://github.com/deepking/nobunaga.git
+$ git clone https://github.com/deepking/nobunaga.git
+```
+這時的 origin 是自己的 github repo
+```
+$ git remote -v
+```
+
+必須將 nobunaga 加入 remote
+```
+$ git remote add upstream https://github.com/play-lol/nobunaga
+```
+
+與 nobunaga 同步
+```
+$ git pull upstream
+```
+
+如果還不想 merge(同步), 可以 fetch (只抓 code, 不 merge)
+```
+$ git fetch upstream
 ```
 
 在 sign/ 裡增加 file, 簽到並 push 到 repo
