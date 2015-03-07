@@ -53,6 +53,7 @@ enable 以下文件，並在右上**Offline**選擇 Install All,方便查詢
 
 # git
 只需要基本 clone, add, commit, push, pull, merge 以及處理 conflict
+- [練習](https://github.com/deepking/nevernote/blob/master/git.md)
 - [連猴子都能懂的入門指南](http://backlogtool.com/git-guide/tw/intro/intro2_4.html)
 - [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_tw/ch02.html)
 - [Git CodeSchool](https://try.github.io)
@@ -84,6 +85,7 @@ git push origin master
 
 # 需要瞭解
 優先看 [Javascript](http://www.w3schools.com/js/default.asp), client server 都需要
+- [練習](https://github.com/deepking/nevernote/blob/master/js.md)
 - [Javascript CodeSchool](http://javascript-roadtrip.codeschool.com)
 
 server side
