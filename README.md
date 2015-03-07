@@ -98,3 +98,39 @@ client side
 
 文件(optional)
 - [Markdown](https://help.github.com/articles/markdown-basics/)
+
+
+
+# Contribute Pull Request
+
+## fork & clone
+先 fork play-lol/nobunaga, 並且 clone 自己的 repo
+```
+git clone https://github.com/deepking/nobunaga.git
+```
+
+在 sign/ 裡增加 file, 簽到並 push 到 repo
+```
+$ echo "沒誠意到此一遊" > sign/deepking
+$ git add sign/deepking
+$ git commit -m "簽到"
+$ git push origin master
+```
+
+## Pull Request
+要求 play-lol/nobunaga merger 自己的 branch
+
+點擊右邊的 Pull Requests
+![Step1](images/pr_step1.png)
+
+點擊 New Pull Request
+![Step2](images/pr_step2.png)
+
+檢視 branch 選擇正確, 點擊 Create pull request
+![Step3](images/pr_step3.png)
+
+填完註解, Create pull request，就會送出 PR 到 play-lol/nobunaga
+![Step4](images/pr_step4.png)
+
+play-lol/nobunaga 的管理員能夠執行 merger，簽到就會出現在 nobunaga
+![Step5](images/pr_step5.png)
