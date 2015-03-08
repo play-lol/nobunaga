@@ -89,6 +89,7 @@ git push origin master
 - [Javascript CodeSchool](http://javascript-roadtrip.codeschool.com)
 
 server side
+- [練習](https://github.com/deepking/nevernote/blob/master/node.md)
 - [NodeJS](http://nodejs.org/)
 - [Express](http://expressjs.com/)
 
