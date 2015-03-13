@@ -50,6 +50,9 @@ enable 以下文件，並在右上**Offline**選擇 Install All,方便查詢
 - jQuery
 - Node.js
 
+express cheatsheets
+- https://github.com/azat-co/cheatsheets/blob/master/express4/index.md
+
 
 # git
 只需要基本 clone, add, commit, push, pull, merge 以及處理 conflict
@@ -156,3 +159,21 @@ $ git push origin master
 
 ### play-lol/nobunaga 的管理員能夠執行 merger，簽到就會出現在 nobunaga
 ![Step5](images/pr_step5.png)
+
+
+# dependencies
+- build tool
+    - [gulp](https://github.com/gulpjs/gulp)
+- Auth
+    - [Passport](http://passportjs.org)
+- Database
+    - [Sequelize](http://sequelize.readthedocs.org)
+    - [Mongoose](http://mongoosejs.com/)
+- E-mail
+    - [Nodemailer](http://www.nodemailer.com/)
+- Network
+    - [socketio](http://socket.io/)
+    - [request](https://github.com/request/request)
+- log
+    - [debug](https://github.com/visionmedia/debug)
+    - [winston](https://github.com/winstonjs/winston)
