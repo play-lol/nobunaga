@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<%- include("../head", {title: title}); %>
+<body>
+<div class="container-fluid">
+    <div class="col-md-12">
+        <div class="group">
+        </div>
+        <form id="form-group" visibility="hidden"></form>
+        <a href="/groups/new" class="btn btn-primary pull-right">New Group</a>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <td>#</td>
+                <td>Title</td>
+                <td>Author</td>
+            </tr>
+            </thead>
+            <tbody>
+            <% groups.forEach(function(group) { %>
+            <tr>
+                <td><%= group.id %></td>
+                <td><a href="<%= "/groups/" + group.id %>"><%= group.title %></a></td>
+                <td><%= group.author %></td>
+                <td>
+                    <button form="form-group" formmethod="get" type="submit"
+                            formaction="<%= "/groups/" + group.id %>/edit"
+                            class="btn btn-sm btn-default">
+                        Edit
+                    </button>
+                    <button form="form-group" formmethod="post" type="submit"
+                            formaction="<%= "/groups/" + group.id %>/destroy"
+                            class="btn btn-sm btn-default"
+                            onclick="return confirm('Are you sure?')">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+            <% }); %>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

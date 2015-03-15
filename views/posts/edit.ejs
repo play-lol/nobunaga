@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<%- include("../head", {title: title}); %>
+<body>
+<div class="container-fluid">
+    <div class="col-md-4 col-md-offset-4">
+        <form action="<%= "/groups/" + post.gid +"/post/" + post.pid + "/update" %>" method="post">
+            <%- include("../input_text", {id: "Content", value: post.content, className: "input-xxlarge"}); %>
+            <div class="form-actions">
+                <input type="submit" value="Edit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

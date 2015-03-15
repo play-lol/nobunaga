@@ -55,7 +55,7 @@ express cheatsheets
 
 
 # git
-只需要基本 clone, add, commit, push, pull, merge 以及處理 conflict
+只需要基本 clone, add, commit, push, pull, branch, merge 以及處理 conflict
 - [練習](https://github.com/deepking/nevernote/blob/master/git.md)
 - [連猴子都能懂的入門指南](http://backlogtool.com/git-guide/tw/intro/intro2_4.html)
 - [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_tw/ch02.html)
@@ -71,7 +71,7 @@ git clone https://github.com/play-lol/nobunaga.git
 git add FileName
 ```
 
-commit 等同於打王前存檔
+commit 等同於存檔
 ```
 git commit -m "your message"
 ```
@@ -106,68 +106,13 @@ client side
 - [Markdown](https://help.github.com/articles/markdown-basics/)
 
 
-
-# Contribute Pull Request
-
-## fork & clone
-先 fork play-lol/nobunaga, 並且 clone 自己的 repo
-```
-$ git clone https://github.com/deepking/nobunaga.git
-```
-這時的 origin 是自己的 github repo
-```
-$ git remote -v
-```
-
-必須將 nobunaga 加入 remote
-```
-$ git remote add upstream https://github.com/play-lol/nobunaga
-```
-
-與 nobunaga 同步
-```
-$ git pull upstream
-```
-
-如果還不想 merge(同步), 可以 fetch (只抓 code, 不 merge)
-```
-$ git fetch upstream
-```
-
-在 sign/ 裡增加 file, 簽到並 push 到 repo
-```
-$ echo "沒誠意到此一遊" > sign/deepking
-$ git add sign/deepking
-$ git commit -m "簽到"
-$ git push origin master
-```
-
-## Pull Request
-要求 play-lol/nobunaga merger 自己的 branch
-
-### 點擊右邊的 Pull Requests
-![Step1](images/pr_step1.png)
-
-### 點擊 New Pull Request
-![Step2](images/pr_step2.png)
-
-### 檢視 branch 選擇正確, 點擊 Create pull request
-![Step3](images/pr_step3.png)
-
-### 填完註解, Create pull request，就會送出 PR 到 play-lol/nobunaga
-![Step4](images/pr_step4.png)
-
-### play-lol/nobunaga 的管理員能夠執行 merger，簽到就會出現在 nobunaga
-![Step5](images/pr_step5.png)
-
-
 # dependencies
 - build tool
     - [gulp](https://github.com/gulpjs/gulp)
 - Auth
-    - [Passport](http://passportjs.org)
+    - [Passport](http://passportjs.org/)
 - Database
-    - [Sequelize](http://sequelize.readthedocs.org)
+    - [Sequelize](http://sequelize.readthedocs.org/)
     - [Mongoose](http://mongoosejs.com/)
 - E-mail
     - [Nodemailer](http://www.nodemailer.com/)
@@ -177,3 +122,22 @@ $ git push origin master
 - log
     - [debug](https://github.com/visionmedia/debug)
     - [winston](https://github.com/winstonjs/winston)
+- template
+    - 選擇 ejs, 因為語法使用 js, 不用在多學一套語言, 且與 php, erb 類似。
+    - [ejs](http://ejs.co/)
+    - [handlebars](http://handlebarsjs.com/)
+    - [jade](http://jade-lang.com/)
+- web
+    - [forms](https://github.com/caolan/forms)
+    - [csurf](https://github.com/expressjs/csurf)
+    - [cheerio](http://cheeriojs.github.io/cheerio/)
+        - html parser
+    - [bootstrap](http://getbootstrap.com)
+        - layout
+    - [less](lesscss.org)
+        - css pre-processor
+- util
+    - [xtend](https://github.com/Raynos/xtend)
+    - [node-uuid](https://www.npmjs.com/package/node-uuid)
+- es6
+    - [es6-shim](https://github.com/paulmillr/es6-shim)

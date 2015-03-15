@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<%- include("../head", {title: title}); %>
+<body>
+<form id="form-group" visibility="hidden"></form>
+<div class="container-fluid">
+    <div class="col-md-12">
+        <div class="group">
+            <a href="<%= path + "/.." %>" class="btn btn-primary pull-left">Back</a>
+            <a href="<%= path + "/post/new" %>" class="btn btn-warning pull-right">New Post</a>
+            <a href="<%= path + "/edit" %>" class="btn btn-primary pull-right">Edit</a>
+        </div>
+
+    </div>
+    <div class="col-md-12">
+        <h2><%= group.title %></h2>
+
+        <h3><%= group.author %></h3>
+
+        <p><%= group.desc %></p>
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <td>Content</td>
+        </tr>
+        </thead>
+        <tbody>
+        <% posts.forEach(function(post) { %>
+        <tr>
+            <td><%= post.content %></td>
+            <td>
+                <button form="form-group" formmethod="get" type="submit" class="btn btn-sm btn-default"
+                        formaction="<%= path + "/post/" + post.pid + "/edit" %>">
+                    Edit
+                </button>
+                <button form="form-group" formmethod="post" type="submit" class="btn btn-sm btn-default" onclick="return confirm('Are you sure?')"
+                         formaction="<%= path + "/post/" + post.pid + "/destroy"  %>">
+                    Delete
+                </button>
+            </td>
+        </tr>
+        <% }); %>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
