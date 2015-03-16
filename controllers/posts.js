@@ -1,7 +1,7 @@
 "use strict";
 var posts = require("../models/posts");
 
-exports.new_ = function(req, res) {
+exports.new = function(req, res) {
     var gid = Number.parseInt(req.params.gid);
 
     if (gid !== undefined) {

@@ -7,7 +7,7 @@ exports.index = function(req, res) {
     res.render("groups/index", {title: "Groups", groups: groups.list()});
 };
 
-exports.new_ = function(req, res) {
+exports.new = function(req, res) {
     res.render("groups/new", {title: "Create Group"});
 };
 
