@@ -7,6 +7,30 @@ var groups = [
 ];
 
 
+function createGroup(title, desc) {
+    var max = groups.reduce(function(prev, curr) {
+        if (prev) {
+            return {id: Math.max(prev.id, curr.id)};
+        }
+        else {
+            return curr;
+        }
+    });
+
+    // 找到最大 id + 1
+    var id = max.id + 1;
+    console.log("create id", id);
+    var group = {id: id, title: title, author: desc};
+    groups.push(group);
+    return group;
+}
+
+function isID(id) {
+    return function(el) {
+        return el.id === id;
+    };
+}
+
 /**
  * get all groups
  * @returns {Group[]}
@@ -36,28 +60,6 @@ exports.remove = function(id) {
     if (idx >= 0) {
         return groups.splice(idx, 1)[0];
     } else {
-        return null
+        return null;
     }
 };
-
-function isID(id) {
-    return function(el) {
-        return el.id === id;
-    };
-}
-
-function createGroup(title, desc) {
-    var max = groups.reduce(function(prev, curr) {
-        if (prev)
-            return {id: Math.max(prev.id, curr.id)};
-        else
-            return curr;
-    });
-
-    // 找到最大 id + 1
-    var id = max.id + 1;
-    console.log("create id", id);
-    var group = {id: id, title: title, author: desc};
-    groups.push(group);
-    return group;
-}

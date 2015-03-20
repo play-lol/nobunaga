@@ -1,3 +1,4 @@
+"use strict";
 var express = require("express");
 var groups = require("../controllers/groups");
 var posts = require("../controllers/posts");

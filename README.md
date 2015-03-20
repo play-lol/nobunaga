@@ -114,19 +114,24 @@ client side
 - Database
     - [Sequelize](http://sequelize.readthedocs.org/)
     - [Mongoose](http://mongoosejs.com/)
+    - [sqlite3](https://github.com/mapbox/node-sqlite3)
 - E-mail
     - [Nodemailer](http://www.nodemailer.com/)
 - Network
     - [socketio](http://socket.io/)
     - [request](https://github.com/request/request)
+    - [http-proxy](https://github.com/nodejitsu/node-http-proxy)
 - log
     - [debug](https://github.com/visionmedia/debug)
     - [winston](https://github.com/winstonjs/winston)
 - template
-    - 選擇 ejs, 因為語法使用 js, 不用在多學一套語言, 且與 php, erb 類似。
-    - [ejs](http://ejs.co/)
-    - [handlebars](http://handlebarsjs.com/)
-    - [jade](http://jade-lang.com/)
+    - html, 選擇 ejs, 因為語法使用 js, 不用在多學一套語言, 且與 php, erb 類似。
+      - [ejs](http://ejs.co/)
+      - [handlebars](http://handlebarsjs.com/)
+      - [jade](http://jade-lang.com/)
+    - css, 選擇 less, sass 需要 ruby
+      - [less](http://lesscss.org/)
+      - [sass](http://sass-lang.com/)
 - web
     - [forms](https://github.com/caolan/forms)
     - [csurf](https://github.com/expressjs/csurf)
@@ -139,5 +144,9 @@ client side
 - util
     - [xtend](https://github.com/Raynos/xtend)
     - [node-uuid](https://www.npmjs.com/package/node-uuid)
+    - [moment](http://momentjs.com/) datetime formatter
 - es6
     - [es6-shim](https://github.com/paulmillr/es6-shim)
+- test
+    - [mocha](http://mochajs.org/)
+    - [karma](http://karma-runner.github.io/)

@@ -1,7 +1,26 @@
+"use strict";
 var posts = [
     {gid: 0, pid: 0, content: "離開信長三年，最近又回來打，發現留有以前rp，就做了一部影片"},
     {gid: 0, pid: 1, content: "裝備和等級有優勢所以看起來比較硬XD"}
 ];
+
+function removePost(gid, pid) {
+    var idx = posts.findIndex(function(x) {
+        return x.gid === gid && x.pid === pid;
+    });
+
+    if (idx > -1) {
+        return posts.splice(idx, 1);
+    } else {
+        return [];
+    }
+}
+
+function removeAllGroup(gid) {
+    posts = posts.filter(function(x) {
+        return x.gid !== gid;
+    });
+}
 
 /**
  *
@@ -61,21 +80,3 @@ exports.remove = function(gid, pid) {
         return removeAllGroup(gid, pid);
     }
 };
-
-function removePost(gid, pid) {
-    var idx = posts.findIndex(function(x) {
-        return x.gid === gid && x.pid === pid;
-    });
-
-    if (idx > -1) {
-        return posts.splice(idx, 1);
-    } else {
-        return [];
-    }
-}
-
-function removeAllGroup(gid) {
-    posts = posts.filter(function(x) {
-        return x.gid !== gid;
-    });
-}
