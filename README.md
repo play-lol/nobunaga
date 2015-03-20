@@ -33,7 +33,7 @@
 4. 執行 server
 
     ```
-    DEBUG=nobunaga:* ./bin/www
+    npm start
     ```
     open browser http://localhost:3000
 
